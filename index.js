@@ -9,14 +9,14 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItemPlay'));
 
 let songs = [
-    {songName: "Mast Magan", filePath: "spotify/1.mp3", coverPath: "spotify/images/cover1.jpeg"},
-    {songName: "Shayad", filePath: "spotify/2.mp3", coverPath: "spotify/images/cover2.jpeg"},
-    {songName: "Hawayein", filePath: "spotify/3.mp3", coverPath: "spotify/images/cover3.jpeg"},
-    {songName: "Tera Yaar Hoon Main", filePath: "spotify/4.mp3", coverPath: "spotify/images/cover4.jpeg"},
-    {songName: "Tujhe Kitna Chahne Lage", filePath: "spotify/5.mp3", coverPath: "spotify/images/cover5.jpeg"},
-    {songName: "Kesariya", filePath: "spotify/6.mp3", coverPath: "spotify/images/cover6.jpeg"},
-    {songName: "Apna Bana Le", filePath: "spotify/7.mp3", coverPath: "spotify/images/cover7.jpeg"},
-    {songName: "Satranga", filePath: "spotify/8.mp3", coverPath: "spotify/images/cover8.jpeg"},
+    {songName: "Mast Magan", filePath: "spotify/spotify/1.mp3", coverPath: "spotify/spotify/images/cover1.jpeg"},
+    {songName: "Shayad", filePath: "spotify/spotify/2.mp3", coverPath: "spotify/spotify/images/cover2.jpeg"},
+    {songName: "Hawayein", filePath: "spotify/spotify/3.mp3", coverPath: "spotify/spotify/images/cover3.jpeg"},
+    {songName: "Tera Yaar Hoon Main", filePath: "spotify/spotify/4.mp3", coverPath: "spotify/spotify/images/cover4.jpeg"},
+    {songName: "Tujhe Kitna Chahne Lage", filePath: "spotify/spotify/5.mp3", coverPath: "spotify/spotify/images/cover5.jpeg"},
+    {songName: "Kesariya", filePath: "spotify/spotify/6.mp3", coverPath: "spotify/spotify/images/cover6.jpeg"},
+    {songName: "Apna Bana Le", filePath: "spotify/spotify/7.mp3", coverPath: "spotify/spotify/images/cover7.jpeg"},
+    {songName: "Satranga", filePath: "spotify/spotify/8.mp3", coverPath: "spotify/spotify/images/cover8.jpeg"},
 ];
 
 songItems.forEach((element, i) => {
@@ -85,7 +85,7 @@ document.getElementById('next').addEventListener('click', () => {
     }
     
 
-    audioElement.src = `spotify/${songIndex + 1}.mp3`;
+    audioElement.src = `spotify/spotify/${songIndex + 1}.mp3`;
     masterSongName.innerText=songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -102,7 +102,7 @@ document.getElementById('previous').addEventListener('click', () => {
     }
   
 
-    audioElement.src = `spotify/${songIndex + 1}.mp3`;
+    audioElement.src = `spotify/spotify/${songIndex + 1}.mp3`;
     masterSongName.innerText=songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();

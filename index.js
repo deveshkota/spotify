@@ -9,7 +9,7 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItemPlay'));
 
 let songs = [
-    {songName: "Mast Magan", filePath: "spotify/spotify/1.mp3", coverPath: "spotify/spotify/images/cover1.jpeg"},
+    {songName: "Mast Magan", filePath: "spotify/spotify/1.mp3", coverPath: "spotify/images/cover1.jpeg"},
     {songName: "Shayad", filePath: "spotify/spotify/2.mp3", coverPath: "spotify/spotify/images/cover2.jpeg"},
     {songName: "Hawayein", filePath: "spotify/spotify/3.mp3", coverPath: "spotify/spotify/images/cover3.jpeg"},
     {songName: "Tera Yaar Hoon Main", filePath: "spotify/spotify/4.mp3", coverPath: "spotify/spotify/images/cover4.jpeg"},
